@@ -50,12 +50,49 @@ Now you are ready to arrange your players. Find the middle console with the labe
 
 The rows to the left are your players. You can select any one of your cast as players 1-8 by clicking on the appropriate thumbnail. 
 
+Make sure the '3D BG' button is turned off in the row between 'output' and 'preview'
+
 *Note player 1 has an option for displaying the video feed of the operator with the small box labeled 'On' or 'off' at the bottom left. When set to 'On' the user video will be displayed instead of the cast member.
 
 To see the immediate affect of player controls the 'Preview' window to the right displays all the realtime adjusments being made. The current settings for any scene can be saved by pressing one of the numbers in the 'Save' column.
 
 The 'Prev' column will load the previously saved settings for a given cue number.
 
-The saved scene numbers correspond to the 'Output' numbered tabs at the top.
+The saved scene numbers correspond to the 'Output' numbered tabs at the top. The output window feeds into an NDI output that can set to your virtual webcam or loaded directly in your broadcasting tool that supports NDI.
+
+To compose a scene, select a background and fade the relevant players video up. 
+
+Use the XY 2D sliders to position your players within the scene.
+
+You can use the 'scale' sliders to scale the pixels up or down.
+
+Use the 'Z pos' sliders to move the players closer or further from the virtual camera.
+
+X,Y,Z rotation will rotate player videos on the corresponding axis.
+
+Activate the foreground element by turning on the FG button located next to the 'BG Z Pos' of the of the middle console toward the bottom.
+
+Select a foreground element by clicking on the icon of the relevant image.
+
+The FG element can be positioned in the same way as the players using the sliders.
+
+At the bottom of the 'preview' window are a set of tools for displaying text.
+
+Type the text you want to display in the corresponding window. Select 'Text off' or 'Text on' to preview the text. Select 'Disp On or Disp off' to display the text in the output.
+
+*Note you must save the scene with the text in oder to see it display in the output
+
+Besides switching between saved scenes, you can also display the preview scene directly to the output by selecting the 'Go Live' button.
+
+While outputing a scene, you can use the camera control buttons located beneath the scene numbers of the output window. 'CU1 - CU8' will dolly the virtual camera into a close up of the player. The other buttons are for use with a 3D scene which will be covered later.
+
+You can record the video of your output by selecting a folder location and hitting the 'record' button. *Note recording is computationally expensive and requires a fast CPU to run 
+
+There are several other advanced features which will be described later.
+
+* Note background and foreground elements can be video or images. For video we suggest encoding your footage in the .hap codec for smooth playback. 
+
+
+
 
 
