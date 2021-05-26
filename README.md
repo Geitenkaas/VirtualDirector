@@ -4,8 +4,8 @@ A tool for rehearsing and performing live theatre remotely.
 
 VirtualDirector is a live broadcast and realtime editing tool for remote collaborators. The platform captures video feeds either through a screen capture of a video conferencing call or directly through webRTC, a secure peer-to-peer streaming technology facillitated by OBS Ninja. VirtualDirector allows a user to mix video feeds from remote users inside a shared virtual environment that can be dynamically changed and saved as scenes to facilitate the rehearsal and performance of theatre. The platform has tools for removing chromakey backrounds, working with 2D video and image assets as background and foreground elements as well compositing remote participants inside 3D geometry.
 
-![Virtual Director](https://github.com/Geitenkaas/VirtualDirector/bVirtual Director GUI, 2020:(a) Zoom screen capture, (b) FG select, (c) Player select, (d) BG select, (e) Previewlob/main/virtual_director.png "Virtual Director")
-Virtual Director GUI, 2020:(a) Zoom screen capture, (b) FG select, (c) Player select, (d) BG select, (e) Preview
+![Virtual Director](https://github.com/Geitenkaas/VirtualDirector/blob/main/virtual_director.png "Virtual Director")
+`Virtual Director GUI, 2020:(a) Zoom screen capture, (b) FG select, (c) Player select, (d) BG select, (e) Preview`
 
 You can learn more about how the platform was used to study the affects of tele-immersion on improvisational theatre in our SIGCHI 2021 paper: [Tele-Immersive Improv: Effects of Immersive Visualisations on Rehearsing and Performing Theatre Online](https://kar.kent.ac.uk/87284/11/Virtually_Immersive_Improv__Effect_of_Immersive_Visualisations_on_Rehearsing_and_Performing_Theatre_Online__Copy_.pdf) as well as in the accompanying video:
 
@@ -14,8 +14,7 @@ You can learn more about how the platform was used to study the affects of tele-
 alt="IMAGE ALT TEXT HERE" width="33%" border="10" /></a>
 
 ![System overview](https://github.com/Geitenkaas/VirtualDirector/blob/main/system_overview.png "System overview")
-
-System overview, Virtual Director 2020: (a) Isolated performer connects via client software, (b) Background segmenta-tion is performed by client software, (c) Performer sees a video of themselves co-located with partners in virtual space, (d) NDImacros supply client video to Virtual Director, (e) Automatic separation of video call participants, (f,g) Virtual Director selectsbackground and foreground assets for compositing, (h) Each asset appears as a 3D object that can be rotated, scaled, faded, andpositioned dynamically.
+`System overview, Virtual Director 2020: (a) Isolated performer connects via client software, (b) Background segmenta-tion is performed by client software, (c) Performer sees a video of themselves co-located with partners in virtual space, (d) NDImacros supply client video to Virtual Director, (e) Automatic separation of video call participants, (f,g) Virtual Director selectsbackground and foreground assets for compositing, (h) Each asset appears as a 3D object that can be rotated, scaled, faded, andpositioned dynamically.`
 
 ## Bibtex
 
