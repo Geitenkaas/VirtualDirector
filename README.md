@@ -12,6 +12,9 @@ You can learn more about how the platform was used to study the affects of tele-
 " target="_blank"><img src="http://img.youtube.com/vi/N9PXSp1Xa3M/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="33%" border="10" /></a>
 
+![System overview, Virtual Director 2020: (a) Isolated performer connects via client software, (b) Background segmenta-tion is performed by client software, (c) Performer sees a video of themselves co-located with partners in virtual space, (d) NDImacros supply client video to Virtual Director, (e) Automatic separation of video call participants, (f,g) Virtual Director selectsbackground and foreground assets for compositing, (h) Each asset appears as a 3D object that can be rotated, scaled, faded, andpositioned dynamically.]
+(https://github.com/Geitenkaas/VirtualDirector/blob/main/system_overview.png "System overview")
+
 ## Bibtex
 
 If you use this work in an academic context, please cite:
@@ -86,53 +89,55 @@ Press `Update` to extract the players and load them into the GUI. (You may need 
 
 Next select your background images by pressing the small folder icon at the end of the row labeled `BGs`. We recommend beginning with the 2nd image set of backgrounds found in the `Asset Folder` of this repo. Technically images can be of any size, but larger images will require more processing power. We also recommend a 16X9 apsect ratio for your images. We generally work with 1920px x 1080px images.
 
-Next find the 'FGs' label and select the folder icon at the end of the row to load a folder of .png images to use as 'foreground' elements. We suggest starting with the FG folder provided in the Asset folder with this repo.
+Next find the `FGs` label and select the folder icon at the end of the row to load a folder of `.png` images to use as _foreground_ elements. We suggest starting with the FG folder provided in the Asset folder with this repo.
+
+## Arranging players
 
 Now you are ready to arrange your players. Find the middle console with the label `Select Cast`. Here you can select individual cast member video feeds to refine their background segmentation. Select the number of the cast member from the dropdown. The following row labled `P` and `U` are for use with ObsNinja and can be ignored for now. Make sure the button to the right is in the `off` position in order to work with your Zoom NDI capture. Press `Smart Key` to perform an automatic background removal. If the chromakey is not well executed you can manually adjust the hue, saturation, and values to fine tune your key. Perform this operation for all players.
 
-The rows to the left are your players. You can select any one of your cast as players 1-8 by clicking on the appropriate thumbnail. 
+The rows to the left are your players. You can select any one of your cast as players 1-8 by clicking on the appropriate thumbnail. Note that player 1 has an option for displaying the video feed of the operator with the small box labeled `On` or `off` at the bottom left. When set to `On` the user video will be displayed instead of the cast member.
 
 Make sure the `3D BG` button is turned off in the row between `output` and `preview`.
 
-* Note player 1 has an option for displaying the video feed of the operator with the small box labeled 'On' or 'off' at the bottom left. When set to 'On' the user video will be displayed instead of the cast member.
+To see the immediate affect of player controls the `Preview` window to the right displays all the realtime adjusments being made. The current settings for any scene can be saved by pressing one of the numbers in the `Save` column.
 
-To see the immediate affect of player controls the 'Preview' window to the right displays all the realtime adjusments being made. The current settings for any scene can be saved by pressing one of the numbers in the 'Save' column.
+The `Prev` column will load the previously saved settings for a given cue number.
 
-The 'Prev' column will load the previously saved settings for a given cue number.
-
-The saved scene numbers correspond to the 'Output' numbered tabs at the top. The output window feeds into an NDI output that can set to your virtual webcam or loaded directly in your broadcasting tool that supports NDI.
+The saved scene numbers correspond to the `Output` numbered tabs at the top. The output window feeds into an NDI output that can set to your virtual webcam or loaded directly in your broadcasting tool that supports NDI.
 
 To compose a scene, select a background and fade the relevant players video up. 
 
 Use the XY 2D sliders to position your players within the scene.
 
-You can use the 'scale' sliders to scale the pixels up or down.
+You can use the `scale` sliders to scale the pixels up or down.
 
-Use the 'Z pos' sliders to move the players closer or further from the virtual camera.
+Use the `Z pos` sliders to move the players closer or further from the virtual camera.
 
 X,Y,Z rotation will rotate player videos on the corresponding axis.
 
-Activate the foreground element by turning on the FG button located next to the 'BG Z Pos' of the of the middle console toward the bottom.
+## Composing scenes
+
+Activate the foreground element by turning on the `FG` button located next to the `BG Z Pos` of the of the middle console toward the bottom.
 
 Select a foreground element by clicking on the icon of the relevant image.
 
 The FG element can be positioned in the same way as the players using the sliders.
 
-At the bottom of the 'preview' window are a set of tools for displaying text.
+At the bottom of the `Preview` window are a set of tools for displaying text.
 
-Type the text you want to display in the corresponding window. Select 'Text off' or 'Text on' to preview the text. Select 'Disp On or Disp off' to display the text in the output.
+Type the text you want to display in the corresponding window. Select `Text off` or `Text on` to preview the text. Select `Disp On` or `Disp off` to display the text in the output.
 
-*Note you must save the scene with the text in oder to see it display in the output
+Note that you must save the scene with the text in oder to see it display in the output.
 
 Besides switching between saved scenes, you can also display the preview scene directly to the output by selecting the 'Go Live' button.
 
 While outputing a scene, you can use the camera control buttons located beneath the scene numbers of the output window. 'CU1 - CU8' will dolly the virtual camera into a close up of the player. The other buttons are for use with a 3D scene which will be covered later.
 
-You can record the video of your output by selecting a folder location and hitting the 'record' button. *Note recording is computationally expensive and requires a fast CPU to run 
+You can record the video of your output by selecting a folder location and hitting the `record` button. Note that recording is computationally expensive and requires a fast CPU to run.
 
 There are several other advanced features which will be described later.
 
-* Note background and foreground elements can be video or images. For video we suggest encoding your footage in the .hap codec for smooth playback. 
+Note background and foreground elements can be video or images. For video we suggest encoding your footage in the `.hap` codec for smooth playback. 
 
 
 # License and collaboration opportunities
