@@ -8,7 +8,7 @@ You can learn more about how the platform was used to study the affects of tele-
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=N9PXSp1Xa3M
 " target="_blank"><img src="http://img.youtube.com/vi/N9PXSp1Xa3M/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="100%" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="33%" border="10" /></a>
 
 ## Bibtex
 
