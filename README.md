@@ -43,7 +43,7 @@ The platform was built and tested on the following configurations:
  
 The platform depends on video feeds being captured and processed through 3rd party software over the network which can be computationally expensive when multiple participants are engaged. We have not tested other configurations so cannot make recommendations beyond the above. We suggest running the platform and experimenting with settings to find a workflow that works with your available hardware.
 
-## Dependencies:
+## Dependencies
 
 Required:
 * [Touchdesigner](https://derivative.ca/download)
