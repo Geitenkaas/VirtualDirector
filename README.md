@@ -1,24 +1,50 @@
 # VirtualDirector
- A tool for rehearsing live theatre remotely
 
-Hardware requirements:
-For optimal use we recommend using a PC with an AMD 5000 series processor and an Nvidia RTX graphics card.
+A tool for rehearsing and performing live theatre remotely.
 
-The platform was built and tested on a windows desktop computer with an AMD Ryzen 7 5800X CPU and Nivdia RTX Quadro 4000 graphics card. The platform depends on video feeds being captured and processed through 3rd party software over the network which can be computationally expensive when multiple participants are engaged. We have not tested other configurations so cannot make recommendations beyond the above. We suggest running the platform and experimenting with settings to find a workflow that works with your available hardware.
+VirtualDirector is a live broadcast and realtime editing tool for remote collaborators. The platform captures video feeds either through a screen capture of a video conferencing call or directly through webRTC, a secure peer-to-peer streaming technology facillitated by OBS Ninja. VirtualDirector allows a user to mix video feeds from remote users inside a shared virtual environment that can be dynamically changed and saved as scenes to facilitate the rehearsal and performance of theatre. The platform has tools for removing chromakey backrounds, working with 2D video and image assets as background and foreground elements as well compositing remote participants inside 3D geometry.
 
-Dependencies:
-Touchdesigner: https://derivative.ca/download
+You can learn more about how the platform was used to study the affects of tele-immersion on improvisational theatre here: https://www.youtube.com/watch?v=N9PXSp1Xa3M and in our SIGCHI 2021 paper: [Tele-Immersive Improv: Effects of Immersive Visualisations on Rehearsing and Performing Theatre Online](https://kar.kent.ac.uk/87284/11/Virtually_Immersive_Improv__Effect_of_Immersive_Visualisations_on_Rehearsing_and_Performing_Theatre_Online__Copy_.pdf).
+
+## Bibtex
+
+If you use this work in an academic context, please cite:
+
+@inproceedings{branch2021tele,
+  title={Tele-Immersive Improv: Effects of Immersive Visualisations on Rehearsing and Performing Theatre Online},
+  author={Branch, Boyd and Efstratiou, Christos and Mirowski, Piotr and Mathewson, Kory W and Allain, Paul},
+  booktitle={Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+  pages={1--13},
+  year={2021}
+}
+
+# Installation
+
+## Hardware requirements
+
+For optimal use we recommend using a PC with an AMD 5000 series processor or equivalent, and a CUDA-enabled Nvidia RTX graphics card. This is because TouchDesigner is optimised for Nvidia GPUs.
+
+The platform was built and tested on the following configurations:
+* Windows 10, AMD Ryzen 7 5800X CPU, Nvidia RTX Quadro 4000 GPU,
+* Windows 10, AMD Ryzen 9 3950X CPU, Nvidia RTX GeForce 3090 GPU,
+* Mac OS 11.3, Intel i9 CPU, AMD Radeon Pro 560X GPU,
+* Mac OS 11.3, Intel i9 CPU, AMD Radeon Pro 5500M GPU.
+ 
+The platform depends on video feeds being captured and processed through 3rd party software over the network which can be computationally expensive when multiple participants are engaged. We have not tested other configurations so cannot make recommendations beyond the above. We suggest running the platform and experimenting with settings to find a workflow that works with your available hardware.
+
+## Dependencies:
+
+Required:
+* [Touchdesigner](https://derivative.ca/download)
+
+VirtualDirector runs inside of Touchdesigner, a visual programming sandbox. Basic familiarity with Touchdesigner is recommended for succesfull deployment of VirtualDirector. The platform is modular and can be adapted to meet the specific needs of your performance troupe.
 
 Optional:
-NDI Tools: https://www.ndi.tv/tools/
-VB-Audio: https://vb-audio.com/
-Obs Ninja: https://docs.obs.ninja/
+* For capturing the live feed of remote actors, we use [Obs Ninja](https://docs.obs.ninja/), a web application developed by the amazing and generous [Steve Seguin](https://github.com/steveseguin).
+* For streaming live outputs from TouchDesigner, we use [NDI Tools](https://www.ndi.tv/tools/) as virtual camera.
+* [VB-Audio](https://vb-audio.com/)
 
-VirtualDirector is a live broadcast and realtime editing tool for remote collaborators. The platform captures video feeds either through a screen capture of a video conferencing call or directly through webRTC, a secure peer-to-peer streaming technology facillitated by OBS Ninja developed by the amazing and generous Steve Seguin (https://github.com/steveseguin). VirtualDirector allows a user to mix video feeds from remote users inside a shared virtual environment that can be dynamically changed and saved as scenes to facilliate the rehearsal and performance of theatre. The platform has tools for removing chromakey backrounds, working with 2D video and image assets as background and foreground elements as well compositing remote participants inside 3D geometry.
-
-VirtualDirector runs inside of Touchdesigner, a visual programming sandbox. Basic familiarity with Touchdesigner is recommended for succesfull deployment of VirtualDirector. The platform is modular and can be adapted to meet the specific needs of your performance troupe. The platform is released under an MIT Open Source License that requires attribution to the orignal developers (Boyd Branch & Piotr Mirowski) for any public use of the software. Commercial use of the software requires purchase of a professional Touchdesigner license (https://derivative.ca/UserGuide/TouchDesigner_Commercial). VirtualDirector was developed as part of a research project carried out at the University of Kent and is made publically available here for other researchers and performers to use free of charge (and also free of technical support :-) We only ask for notification of how it is being used and attribution if used for public performance. We are enthusiastic collaborators, so also welcome any interest in further developing the project.
-
-You can learn more about how the platform was used to study the affects of tele-immersion on improvisational theatre here: https://www.youtube.com/watch?v=N9PXSp1Xa3M
+# Usage
 
 To operate the software download the latest version of Touchdesginer and clone this repository to your fastest drive.  Open the VirtualDirector_XXXXX.toe file by double clicking the icon. 
 
@@ -93,6 +119,9 @@ There are several other advanced features which will be described later.
 * Note background and foreground elements can be video or images. For video we suggest encoding your footage in the .hap codec for smooth playback. 
 
 
+# License and collaboration opportunities
 
+The platform is released under an [MIT License](https://github.com/Geitenkaas/VirtualDirector/blob/main/LICENSE) that requires attribution to the orignal developers ([Boyd Branch](https://www.boydbranch.com/) & [Piotr Mirowski](https://piotrmirowski.com)) for any public use of the software. Commercial use of the software requires purchase of a professional Touchdesigner license (https://derivative.ca/UserGuide/TouchDesigner_Commercial). VirtualDirector was developed as part of a research project carried out at the University of Kent and is made publically available here for other researchers and performers to use free of charge (and also free of technical support :-) ). We only ask for notification of how it is being used and attribution if used for public performance. We are enthusiastic collaborators, so also welcome any interest in further developing the project.
 
-
+All code is copyright (c) 2020-2021 Boyd Branch (username Geitenkaas).
+Additional code contributions by Piotr Mirowski.
