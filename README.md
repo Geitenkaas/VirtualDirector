@@ -4,12 +4,16 @@ A tool for rehearsing and performing live theatre remotely.
 
 VirtualDirector is a live broadcast and realtime editing tool for remote collaborators. The platform captures video feeds either through a screen capture of a video conferencing call or directly through webRTC, a secure peer-to-peer streaming technology facillitated by OBS Ninja. VirtualDirector allows a user to mix video feeds from remote users inside a shared virtual environment that can be dynamically changed and saved as scenes to facilitate the rehearsal and performance of theatre. The platform has tools for removing chromakey backrounds, working with 2D video and image assets as background and foreground elements as well compositing remote participants inside 3D geometry.
 
-You can learn more about how the platform was used to study the affects of tele-immersion on improvisational theatre here: https://www.youtube.com/watch?v=N9PXSp1Xa3M and in our SIGCHI 2021 paper: [Tele-Immersive Improv: Effects of Immersive Visualisations on Rehearsing and Performing Theatre Online](https://kar.kent.ac.uk/87284/11/Virtually_Immersive_Improv__Effect_of_Immersive_Visualisations_on_Rehearsing_and_Performing_Theatre_Online__Copy_.pdf).
+You can learn more about how the platform was used to study the affects of tele-immersion on improvisational theatre in our SIGCHI 2021 paper: [Tele-Immersive Improv: Effects of Immersive Visualisations on Rehearsing and Performing Theatre Online](https://kar.kent.ac.uk/87284/11/Virtually_Immersive_Improv__Effect_of_Immersive_Visualisations_on_Rehearsing_and_Performing_Theatre_Online__Copy_.pdf) as well as in the accompanying video:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=N9PXSp1Xa3M
+" target="_blank"><img src="http://img.youtube.com/vi/N9PXSp1Xa3M/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Bibtex
 
 If you use this work in an academic context, please cite:
 
+```
 @inproceedings{branch2021tele,
   title={Tele-Immersive Improv: Effects of Immersive Visualisations on Rehearsing and Performing Theatre Online},
   author={Branch, Boyd and Efstratiou, Christos and Mirowski, Piotr and Mathewson, Kory W and Allain, Paul},
@@ -17,6 +21,7 @@ If you use this work in an academic context, please cite:
   pages={1--13},
   year={2021}
 }
+```
 
 # Installation
 
@@ -121,7 +126,7 @@ There are several other advanced features which will be described later.
 
 # License and collaboration opportunities
 
-The platform is released under an [MIT License](https://github.com/Geitenkaas/VirtualDirector/blob/main/LICENSE) that requires attribution to the orignal developers ([Boyd Branch](https://www.boydbranch.com/) & [Piotr Mirowski](https://piotrmirowski.com)) for any public use of the software. Commercial use of the software requires purchase of a professional Touchdesigner license (https://derivative.ca/UserGuide/TouchDesigner_Commercial). VirtualDirector was developed as part of a research project carried out at the University of Kent and is made publically available here for other researchers and performers to use free of charge (and also free of technical support :-) ). We only ask for notification of how it is being used and attribution if used for public performance. We are enthusiastic collaborators, so also welcome any interest in further developing the project.
+The platform is released under an [MIT License](https://github.com/Geitenkaas/VirtualDirector/blob/main/LICENSE) that requires attribution to the orignal developers ([Boyd Branch](https://www.boydbranch.com/) & [Piotr Mirowski](https://piotrmirowski.com)) for any public use of the software. Commercial use of the software requires purchase of a [professional Touchdesigner license](https://derivative.ca/UserGuide/TouchDesigner_Commercial). VirtualDirector was developed as part of a research project carried out at the University of Kent and is made publically available here for other researchers and performers to use free of charge (and also free of technical support :-) ). We only ask for notification of how it is being used and attribution if used for public performance. We are enthusiastic collaborators, so also welcome any interest in further developing the project.
 
 All code is copyright (c) 2020-2021 Boyd Branch (username Geitenkaas).
 Additional code contributions by Piotr Mirowski.
