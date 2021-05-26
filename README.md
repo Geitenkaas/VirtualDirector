@@ -5,9 +5,10 @@ A tool for rehearsing and performing live theatre remotely.
 VirtualDirector is a live broadcast and realtime editing tool for remote collaborators. The platform captures video feeds either through a screen capture of a video conferencing call or directly through webRTC, a secure peer-to-peer streaming technology facillitated by OBS Ninja. VirtualDirector allows a user to mix video feeds from remote users inside a shared virtual environment that can be dynamically changed and saved as scenes to facilitate the rehearsal and performance of theatre. The platform has tools for removing chromakey backrounds, working with 2D video and image assets as background and foreground elements as well compositing remote participants inside 3D geometry.
 
 You can learn more about how the platform was used to study the affects of tele-immersion on improvisational theatre in our SIGCHI 2021 paper: [Tele-Immersive Improv: Effects of Immersive Visualisations on Rehearsing and Performing Theatre Online](https://kar.kent.ac.uk/87284/11/Virtually_Immersive_Improv__Effect_of_Immersive_Visualisations_on_Rehearsing_and_Performing_Theatre_Online__Copy_.pdf) as well as in the accompanying video:
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=N9PXSp1Xa3M
 " target="_blank"><img src="http://img.youtube.com/vi/N9PXSp1Xa3M/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="100%" border="10" /></a>
 
 ## Bibtex
 
