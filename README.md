@@ -54,39 +54,47 @@ Optional:
 
 # Usage
 
-To operate the software download the latest version of Touchdesginer and clone this repository to your fastest drive.  Open the VirtualDirector_XXXXX.toe file by double clicking the icon. 
+To operate the software download the latest version of Touchdesigner and clone this repository to your fastest drive. Open the `VirtualDirector_XXXXX.toe` file by double clicking the icon. 
+
+## Video capture
 
 VirtualDirector can work with video captured thought the use of NDI Tools or directly through OBS Ninja urls.
 
-For capturing video from video conferencing software (Zoom, MS Teams, Skype etc) we recommend using NDI Tools screen capture: https://www.ndi.tv/nvidia/ to capture the video grid of particpants to feed into VirtualDirector. After downloading NDI tools, launch the NDI Screen Capture tool as well as the NDI Virtual Input. Select your Zoom window as the capture source for your NDI Capture Tool, and then select that source as your NDI Virtual Input.
+For capturing video from video conferencing software (Zoom, MS Teams, Skype etc) we recommend using free [NDI Tools screen capture](https://www.ndi.tv/tools/) or [Nvidia-specific NDI Tools screen capture](https://www.ndi.tv/nvidia/) to capture the video grid of particpants to feed into VirtualDirector. After downloading NDI tools, launch the NDI Screen Capture tool as well as the NDI Virtual Input. Select your Zoom window as the capture source for your NDI Capture Tool, and then select that source as your NDI Virtual Input.
 
-Once you have your Zoom or other Web conferencing tool set up with NDI, you can bring that source in directly to Virtual Director via the 'Source Name' drop down menu. If you have multiple NDI feeds available, they will automatically populate this drop down. Select the relevant NDI Feed.
+Alternatively, you can directly feed an [OBS.ninja](https://obs.ninja/) webpage into the Virtual Director. Each performer needs to open `https://obs.ninja/?push=PLAYER_ID` on their Chrome browser and to start streaming, so that VirtualDirector can read the video stream at the corresponding `https://obs.ninja/?view=PLAYER_ID`.
+
+## Adding players to Virtual Director
+
+Once you have your Zoom or other Web conferencing tool set up with NDI, you can bring that source in directly to Virtual Director via the `Source Name` drop down menu. If you have multiple NDI feeds available, they will automatically populate this drop down. Select the relevant NDI Feed.
 
 Virtual Director depends on users having a chromakey background. If your participants do not have green or blue screens at home, they can utilise the built in background removal tools in Zoom to upload a 'virtual green screen.' Just have the participants upload a green jpeg as their background.
 
 Select Video Feeds:
-Find the top center panel labled 'Library' to select from the available media frameworks available on your computer (usually DirectShow).
+Find the top center panel labeled _Library_ to select from the available media frameworks available on your computer (usually DirectShow).
 Next find your webcam device in the device link.
 
-Next assign this NDI feed as your 'grid source.' Virtual Director allows a user to select from many different sources for thier grid including a provided grid of the 'Brady Bunch' to use for testing purposes. Click on the drop down menu next to 'Grid Source' and select 'NDI 1' to select your NDI source.
+Next assign this NDI feed as your _grid source_. Virtual Director allows a user to select from many different sources for thier grid including a provided grid of the 'Brady Bunch' to use for testing purposes. Click on the drop down menu next to 'Grid Source' and select 'NDI 1' to select your NDI source.
 
 Next specify the amount of rows and columns in your grid.
 
-If you have an uneven grid of players select the 'Odd' option next to your grid column selection. If your rows are even, select 'Even'
+If you have an uneven grid of players select the `Odd` option next to your grid column selection. If your rows are even, select `Even`.
 
-Press 'Update' to extract the players and load them into the GUI. (You may need to press update a few times to fully populate the grid)
+Press `Update` to extract the players and load them into the GUI. (You may need to press update a few times to fully populate the grid).
 
-Next select your background images by pressing the small folder icon at the end of the row labeled 'BGs.' We recommend beginning with the 2nd image set of backgrounds found in the 'Asset Folder' of this repo. Technically images can be of any size, but larger images will require more processing power. We also recommend a 16X9 apsect ratio for your images. We generally work with 1920 X 1080 px images.
+## Selecting backgrounds and foregrounds
+
+Next select your background images by pressing the small folder icon at the end of the row labeled `BGs`. We recommend beginning with the 2nd image set of backgrounds found in the `Asset Folder` of this repo. Technically images can be of any size, but larger images will require more processing power. We also recommend a 16X9 apsect ratio for your images. We generally work with 1920px x 1080px images.
 
 Next find the 'FGs' label and select the folder icon at the end of the row to load a folder of .png images to use as 'foreground' elements. We suggest starting with the FG folder provided in the Asset folder with this repo.
 
-Now you are ready to arrange your players. Find the middle console with the label 'Select Cast.' Here you can select individual cast member video feeds to refine their background segmentation. Select the number of the cast member from the dropdown. The following row labled 'P' and 'U' are for use with ObsNinja and can be ignored for now. Make sure the button to the right is in the 'off position' in order to work with your Zoom NDI capture. Press 'Smart Key' to perform an automatic background removal. If the chromakey is not well executed you can manually adjust the hue, saturation, and values to fine tune your key. Perform this operation for all players.
+Now you are ready to arrange your players. Find the middle console with the label `Select Cast`. Here you can select individual cast member video feeds to refine their background segmentation. Select the number of the cast member from the dropdown. The following row labled `P` and `U` are for use with ObsNinja and can be ignored for now. Make sure the button to the right is in the `off` position in order to work with your Zoom NDI capture. Press `Smart Key` to perform an automatic background removal. If the chromakey is not well executed you can manually adjust the hue, saturation, and values to fine tune your key. Perform this operation for all players.
 
 The rows to the left are your players. You can select any one of your cast as players 1-8 by clicking on the appropriate thumbnail. 
 
-Make sure the '3D BG' button is turned off in the row between 'output' and 'preview'
+Make sure the `3D BG` button is turned off in the row between `output` and `preview`.
 
-*Note player 1 has an option for displaying the video feed of the operator with the small box labeled 'On' or 'off' at the bottom left. When set to 'On' the user video will be displayed instead of the cast member.
+* Note player 1 has an option for displaying the video feed of the operator with the small box labeled 'On' or 'off' at the bottom left. When set to 'On' the user video will be displayed instead of the cast member.
 
 To see the immediate affect of player controls the 'Preview' window to the right displays all the realtime adjusments being made. The current settings for any scene can be saved by pressing one of the numbers in the 'Save' column.
 
